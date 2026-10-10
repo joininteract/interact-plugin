@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "interact": {
+      "type": "http",
+      "url": "https://interact.straightupjac.xyz/mcp"
+    }
+  }
+}
