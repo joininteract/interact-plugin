@@ -7,6 +7,10 @@ description: Route any Interact task to the right Interact connector tool — qu
 
 The Interact connector holds Interact's own documents: Google Drive folders, the Notion guide, Airtable member records, and joininteract.com. **Answer Interact questions from these tools, not from general knowledge,** and cite the links they return.
 
+## First: make sure Interact is connected
+
+Before using any tool below, check that the Interact connector's tools are available in this conversation. If they aren't, the connector isn't connected or signed in yet: follow the `setup` skill (`/interact:setup`) first, then come back to the request.
+
 ## Pick the tool for the task
 
 | The user wants to… | Tool | What to pass |
@@ -27,7 +31,3 @@ The Interact connector holds Interact's own documents: Google Drive folders, the
 - **Keep multi-word values whole.** Pass a full name or a whole draft as one argument.
 - **Go deeper when needed.** If an answer is thin, run `search_interact_docs` with more specific terms, then `get_interact_document` on the best hit.
 - **Say what's missing.** If the documents don't cover something, say so rather than filling in from general knowledge.
-
-## If the tools aren't available
-
-The connector isn't connected or signed in. Follow the `setup` skill (`/interact:setup`), or tell the user to connect Interact and sign in with their allowlisted email.

@@ -30,7 +30,7 @@ It connects Claude to Interact's knowledge base, so questions about programs, re
 
    ![The Interact plugin page, with the toggle at the top right](docs/install/4-enable-plugin.png)
 
-5. **Connect and sign in.** On the same page, open the **Connectors** tab and connect **interact**. Enter your allowlisted email, then the code Interact's sign-in page emails you.
+5. **Connect the Interact connector (required).** Turning on the plugin doesn't connect it. On the same page, open the **Connectors** tab and connect **interact**, then sign in with your allowlisted email and the code Interact's sign-in page emails you. Until this is done, the plugin can't answer anything. If you skip it, Claude will walk you through it the first time you ask.
 
 6. **Start asking.** Click **Try in chat**, or open a new chat, and ask anything about Interact. No special commands needed:
    - "What programs is Interact running this year?"
