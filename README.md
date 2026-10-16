@@ -30,7 +30,25 @@ It connects Claude to Interact's knowledge base, so questions about programs, re
 
    ![The Interact plugin page, with the toggle at the top right](docs/install/4-enable-plugin.png)
 
-5. **Connect the Interact connector (required).** Turning on the plugin doesn't connect it. On the same page, open the **Connectors** tab and connect **interact**, then sign in with your allowlisted email and the code Interact's sign-in page emails you. Until this is done, the plugin can't answer anything. If you skip it, Claude will walk you through it the first time you ask.
+5. **Connect the Interact connector (required).** Turning on the plugin doesn't connect it, and the plugin can't answer anything until you do. If you skip this, Claude walks you through it the first time you ask.
+
+   1. On the plugin page, open the **Connectors** tab. You'll see **interact** marked *Not added*. Click **Connect**.
+
+      ![Connectors tab with interact "Not added" and a Connect button](docs/install/5-connectors-tab.png)
+
+   2. The **Add custom connector** form opens with the name (`interact`) and URL (`https://interact.straightupjac.xyz/mcp`) already filled in. Click **Continue**.
+
+      ![Add custom connector, prefilled](docs/install/6-add-custom-connector.png)
+
+   3. Leave the detected settings as they are: **Authentication: Sign in now** and **OAuth client: Use Claude's published identity**. Don't add any headers. Click **Add**.
+
+      ![Authentication: Sign in now, OAuth client: Use Claude's published identity](docs/install/7-authentication.png)
+
+   4. Interact's sign-in page opens. Enter your allowlisted email, then the code it emails you.
+
+   5. You'll land on the connector's page, listing Interact's seven tools. All of them are read-only. By default each one shows **Needs approval**, so Claude asks before each use. To skip those prompts, set **Read-only tools** to **Always allow**.
+
+      ![The interact connector page, with seven read-only tools set to Needs approval](docs/install/8-tool-permissions.png)
 
 6. **Start asking.** Click **Try in chat**, or open a new chat, and ask anything about Interact. No special commands needed:
    - "What programs is Interact running this year?"
