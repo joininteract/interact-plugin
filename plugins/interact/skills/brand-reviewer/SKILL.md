@@ -1,11 +1,11 @@
 ---
-name: comms-reviewer
-description: Review an Interact email, announcement, WhatsApp message, invite, or speech against Interact's brand and voice. Use when someone asks if a draft is on-brand, sounds like Interact, or wants feedback on Interact writing.
+name: brand-reviewer
+description: Interact Brand Reviewer, used for comms reviews. Reviews an Interact email, announcement, WhatsApp message, invite, or speech against Interact's brand. Use when someone asks if a draft is on-brand, sounds like Interact, or wants feedback on Interact writing.
 ---
 
 **First, make sure Interact is connected.** If the Interact connector's tools aren't available in this conversation, stop and follow the `setup` skill (`/interact:setup`) to connect it and sign in. Continue once it's connected.
 
-Call the Interact connector's `interact_comms_reviewer` tool with:
+Call the Interact connector's **Interact Brand Reviewer** tool (`interact_comms_reviewer`) with:
 - `draft`: the full text to review (from the message or an attached file). If there is no draft, ask for it.
 - `context`: audience, channel, or goal, if the user mentioned one.
 

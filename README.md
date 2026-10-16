@@ -70,7 +70,7 @@ It connects Claude to Interact's knowledge base, so questions about programs, re
    |---|---|
    | `/interact:ask <question>` | Answers questions about Interact, with sources |
    | `/interact:lookup <name or email>` | Looks up a member: their record first, then retreat and program history |
-   | `/interact:comms-reviewer <draft>` | Reviews a draft against Interact's brand and voice |
+   | `/interact:brand-reviewer <draft>` | Interact Brand Reviewer: reviews comms (emails, announcements, invites) against Interact's brand |
    | `/interact:wwmd <situation>` | What would M\* do? Who is M? That's for you to figure out. |
    | `/interact:setup` | Checks your connection and helps you sign in |
 

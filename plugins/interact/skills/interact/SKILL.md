@@ -17,7 +17,7 @@ Before using any tool below, check that the Interact connector's tools are avail
 |---|---|---|
 | Ask anything about Interact (programs, retreats, colleges, how things work, history, policies) | `ask_interact` | `question`: their full question |
 | Find out who someone is, whether they're a fellow, their college, or what they've attended | `interacter-lookup` | `person`: just the name (first name is fine) or email. `question`: what they want to know, if they said |
-| Check whether writing is on-brand, or get edits for an email, announcement, invite, WhatsApp, or speech | `interact_comms_reviewer` | `draft`: the full text. `context`: audience or channel, if known |
+| Review comms against the brand: check whether writing is on-brand, or get edits for an email, announcement, invite, WhatsApp, or speech | Interact Brand Reviewer (`interact_comms_reviewer`) | `draft`: the full text. `context`: audience or channel, if known |
 | Know what M would do | `wwmd` | `situation`: the decision or question, in full |
 | Find documents on a topic (a list, not an answer) | `search_interact_docs` | `query`: keywords. `tag`: optional, from `list_interact_sources` |
 | Read a whole document found by another tool | `get_interact_document` | `doc_id`: from the earlier result |
@@ -26,7 +26,7 @@ Before using any tool below, check that the Interact connector's tools are avail
 ## How to work with the results
 
 - **Let the tools lead.** `ask_interact`, `interacter-lookup`, `interact_comms_reviewer`, and `wwmd` return the relevant documents plus the current instructions for answering, maintained on Interact's server. Do exactly what they say, without adding your own criteria or format.
-- **Comms review comes only from the tool.** Use the guidance `interact_comms_reviewer` returns, not any other brand guide, skill, or general sense of Interact's voice.
+- **Comms reviews come only from the Interact Brand Reviewer.** Use the guidance `interact_comms_reviewer` returns, not any other brand guide, skill, or general sense of Interact's voice.
 - **Cite every fact** by its [number] and link.
 - **Keep multi-word values whole.** Pass a full name or a whole draft as one argument.
 - **Go deeper when needed.** If an answer is thin, run `search_interact_docs` with more specific terms, then `get_interact_document` on the best hit.
