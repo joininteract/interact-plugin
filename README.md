@@ -52,7 +52,7 @@ It connects Claude to Interact's knowledge base, so questions about programs, re
 
 6. **Start asking.** Click **Try in chat**, or open a new chat, and ask anything about Interact. No special commands needed:
    - "What programs is Interact running this year?"
-   - "Who is Jordan Lee? Which college are they in?"
+   - "Who is …? Which college are they in?"
    - "Is this email on-brand?" followed by your draft
    - "What would M\* do about…"
 

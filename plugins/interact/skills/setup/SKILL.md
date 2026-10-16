@@ -50,6 +50,6 @@ After fixing, repeat step 1 to confirm.
 ## What you can ask once connected
 
 - "What programs is Interact running this year?"
-- "Who is <name>? Which college are they in?"
+- "Who is …? Which college are they in?"
 - "Is this email on-brand? <draft>"
 - "What would M do about <situation>?"
