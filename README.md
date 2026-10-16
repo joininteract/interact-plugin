@@ -10,13 +10,29 @@ It connects Claude to Interact's knowledge base, so questions about programs, re
 
 ### In Claude (claude.ai or the Claude desktop app)
 
-1. **Add the plugin.** Go to **Customize → Plugins**, click **Add**, choose **Add marketplace**, and paste:
+1. **Open the plugins page.** Go to **Customize** and select the **Plugins** tab. Click **Add** (top right), then **Add marketplace**.
+
+   ![Customize → Plugins → Add → Add marketplace](docs/install/1-add-marketplace.png)
+
+2. **Choose "Add from a repository".**
+
+   ![Add from a repository](docs/install/2-add-from-repository.png)
+
+3. **Paste the repository URL and sync.** Paste the URL below, select **Use "https://github.com/joininteract/interact-plugin"**, then click **Sync**.
    ```
    https://github.com/joininteract/interact-plugin
    ```
-2. **Install it.** Find **Interact** in the list and click **Install**.
-3. **Connect and sign in.** Open the Interact plugin, go to its **Connectors** tab, and click **Connect**. Enter your allowlisted email, then the code Interact's sign-in page emails you.
-4. **Start asking.** Open a new chat and ask anything about Interact. No special commands needed:
+   Claude shows a standard warning about trusting plugins from outside Anthropic. That's expected for any marketplace you add yourself.
+
+   ![Paste the URL, then Sync](docs/install/3-paste-url-sync.png)
+
+4. **Turn on the Interact plugin.** Open **Interact** (from interact-plugin) and switch on the toggle at the top right.
+
+   ![The Interact plugin page, with the toggle at the top right](docs/install/4-enable-plugin.png)
+
+5. **Connect and sign in.** On the same page, open the **Connectors** tab and connect **interact**. Enter your allowlisted email, then the code Interact's sign-in page emails you.
+
+6. **Start asking.** Click **Try in chat**, or open a new chat, and ask anything about Interact. No special commands needed:
    - "What programs is Interact running this year?"
    - "Who is Jordan Lee? Which college are they in?"
    - "Is this email on-brand?" followed by your draft
