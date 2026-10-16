@@ -1,8 +1,11 @@
 {
   "name": "interact",
   "displayName": "Interact",
-  "description": "Search Interact's documents, review comms against the brand voice, and ask what M* would do. Requires an Interact allowlisted email.",
-  "author": { "name": "Interact", "url": "https://joininteract.com" },
+  "description": "Helps Interact's internal team find information and get answers to their questions about Interact.",
+  "author": {
+    "name": "Interact",
+    "url": "https://joininteract.com"
+  },
   "homepage": "https://joininteract.com",
   "license": "MIT"
 }

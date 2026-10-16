@@ -1,12 +1,15 @@
 {
   "name": "interact",
   "description": "Claude plugins for the Interact community",
-  "owner": { "name": "Interact", "url": "https://joininteract.com" },
+  "owner": {
+    "name": "Interact",
+    "url": "https://joininteract.com"
+  },
   "plugins": [
     {
       "name": "interact",
       "source": "./plugins/interact",
-      "description": "Search Interact's documents, review comms against the brand voice, and ask what M* would do."
+      "description": "Helps Interact's internal team find information and get answers to their questions about Interact."
     }
   ]
 }
